@@ -1,21 +1,22 @@
 #include <stdio.h>
-
-int string_length(char* given_string)
-{
-
+// Function to calculate the length of a string
+int stringLength(char *str) {
     int length = 0;
-    while (*given_string != '\0') {
+    // Iterate through the string until the null terminator is encountered
+    while (*str != '\0') {
         length++;
-        given_string++;
+        str++; // Move to the next character in the string
     }
     return length;
 }
-
-int main()
-{
-
-    char given_string[] = "GeeksforGeeks";
-    printf("Length of the String: %d\n",
-        string_length(given_string));
+int main() {
+    char str[100];
+    printf("Enter a string: ");
+    scanf("%s", str);
+    // Call the function to get the length of the string
+    int length = stringLength(str);
+    printf("Length of the string: %d\n", length);
     return 0;
 }
+
+
