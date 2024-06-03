@@ -15,6 +15,9 @@ int main ()
     f = km * 3280.84;
 
 
+// testting the codes git option how dos it works, its kind of comples and cool
+
+
     printf("Distance in meter: %f\n ", m);
      printf("Distance in centimeter: %f\n ", cm);
       printf("Distance in inch: %f\n ", inch);
